@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f172a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+}
+
+.App {
+  background-color: white;
+  border-radius: 1rem;
+  flex: 1;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+header button {
+  border: none;
+  border-radius: 1rem;
+  background-color: #67e8f9;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem 5rem;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #22d3ee;
+}
+
+header button.active {
+  background-color: #155e75;
+  color: white;
+}
+
+header button.active:hover {
+  background-color: #164e63;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h1 select {
+  appearance: none;
+  font-size: inherit;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem 6rem 1rem 2rem;
+  background-color: #155e75;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
